@@ -152,6 +152,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/guestbook/">
+                <i class="iconfont icon-guestbook-fill"></i>
+                留言
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -237,6 +249,12 @@
             <!-- SEO header -->
             <h1 style="display: none">The 199</h1>
             
+              <p class="note note-info">
+                
+                  强尼写在1 天前
+                
+              </p>
+            
             <div class="markdown-body">
               <p>今天是和gege的第199天，好奇妙。<br>两年之后的今天终于明白那天晚上芦苇所讲的话，将就和热爱从不一样。</p>
 <p>在此批评李丽楚同学下午的所作所为，气人。</p>
@@ -295,6 +313,26 @@
                   
                 
                 
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"5WOFU9vmWqJ0bedCFiThaqac-gzGzoHsz","appKey":"iu7eaSFyLutWsFBPPDTrUAgq","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
 
               </article>
             

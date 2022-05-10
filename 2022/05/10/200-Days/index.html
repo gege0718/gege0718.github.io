@@ -154,6 +154,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/guestbook/">
+                <i class="iconfont icon-guestbook-fill"></i>
+                留言
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -239,6 +251,12 @@
             <!-- SEO header -->
             <h1 style="display: none">200 Days</h1>
             
+              <p class="note note-info">
+                
+                  强尼写在3 小时前
+                
+              </p>
+            
             <div class="markdown-body">
               <p>今天，是和李丽楚的第二百天。<br>一切都过得好快，虽然已经那么久，但是异地的时间也来到了第115天。<br>想说的是，200days is not nearly enough.</p>
 <p>也不知道一些人所说会在电脑上看这个blog是真的假的。<br><img src="/images/200.jpg" srcset="/img/loading.gif" lazyload alt="200days"></p>
@@ -291,6 +309,26 @@
                   
                 
                 
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"5WOFU9vmWqJ0bedCFiThaqac-gzGzoHsz","appKey":"iu7eaSFyLutWsFBPPDTrUAgq","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
 
               </article>
             
